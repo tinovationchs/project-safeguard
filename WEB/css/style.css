@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700');
+
+* {
+	font-family:Nunito;
+}
+
+body {
+	background-color: #ecf0f1;
+}
+
+.icon-sm {
+	width:16px;
+	margin-top:-2px;
+}
+.timestamp {
+	line-height: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        /*background-color: lightgreen;*/
+
+    }
+
+
+    .child {
+    	line-height: 16px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    body {
+        /*background-color: lightblue;*/
+        overflow:hidden;
+    }
+
+    .feed {
+    	height:100%;
+    	overflow-y:scroll;
+    	padding-top:40px;
+    	padding-bottom: 40px;
+    }
+
+
+    .topblock {
+    	height:27%;
+    }
+
+    .child {
+    	vertical-align: middle;
+    	height:60%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* SCROLL */
+
+::-webkit-scrollbar {
+  width: 19px;
+  height: 19px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #000000;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #ffffff;
+}
+::-webkit-scrollbar-track:active {
+  background: #c0c0c0;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
