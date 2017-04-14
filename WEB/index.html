@@ -37,14 +37,25 @@
     <div class="topblank"></div>
 
      <div class="col-md-6 col-xs-12">
-        <h1> SAFEGUARD </h1>
+        <h2> SAFEGUARD </h2>
 
         <br />
         <br />
 
+        <p> Have an account already? </p>
+        <a style="margin-right:10px;" href="feed.html" onclick="" class="btn btn-default">Sign in</a>
+
+        <br />
+        <br /><br />
+        <br /><br />
+        <br />
+
+        <p> Don't have an account yet? Register below! </p>
+        <br />
+        <br />
         <div class="form-group">
           <label class="control-label" for="focusedInput">Username</label>
-          <input class="form-control" id="email" type="text" value="">
+          <input class="form-control" id="user" type="text" value="">
         </div>
 
         <div class="form-group">
@@ -53,9 +64,19 @@
         </div>
 
         <br /> <br />
-        <a style="margin-right:10px;" href="#feed.html" onclick="safeguard_signInUser()" class="btn btn-default">Sign in</a>
-        <a href="#" onclick="safeguard_createUser()" class="btn btn-default">Sign up</a>
+
+        <a style="margin-right:10px;" href="#" onclick="safeguard_createUser()" class="btn btn-default">Sign up</a>
+
+
+
+
+
+        <div id="quickstart-account-details">
+        </div>
+
       </div>
+
+
 
     </div>
     <!-- /.container -->

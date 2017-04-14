@@ -29,135 +29,175 @@
 
 <body>
 
+  <div id="signInUI">
+    <div class="container">
+      <br /><br />
+      <h2> SAFEGUARD </h2>
+      <br /><br />
+      <div class="form-group">
+        <label class="control-label" for="focusedInput">Username</label>
+        <input class="form-control" id="user" type="text" value="">
+      </div>
 
+      <div class="form-group">
+        <label class="control-label" for="focusedInput">Password</label>
+        <input class="form-control" id="password" type="password" value="">
+      </div>
 
-    <!-- Page Content -->
-    <div class="container" style="height:100vh">
-        <div class="col-md-6 col-xs-12" style="height:100%;">
-            <div class="topblock"></div>
-            <div class="child">
-                <h3> Welcome back, </h3>
-                <h1 id="NAME"> John Doe </h1>
-                <h3> It's nice to see you again. </h3>
-                <br />
-                <p> Since you last checked in, you've been visited by </p>
-                <p> <strong> 15 </strong> Strangers </p>
-                <p> <strong> 4 </strong> Friends </p>
+      <br /> <br />
 
-                <br />
-                <p style="font-size:9px"> SAFEGUARD </p>
-                <a style="margin-right:10px;" href="index.html" class="btn btn-danger">Sign out</a>
-                <a href="#" class="btn btn-default">Settings</a>
-
-            </div>
-
-        </div>
-
-        <div class="col-md-6 col-xs-12 feed">
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> STRANGER </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> STRANGER </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> STRANGER </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> STRANGER </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-
-            <!-- Individual Panel -->
-            <div class="panel panel-default">
-              <div class="panel-body">
-                Visited by <strong> BOBBY JOHN </strong>
-              </div>
-              <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
-            </div>
-            <!-- End Panel -->
-        </div>
-
-
+      <a style="margin-right:10px;" href="#" onclick="safeguard_signIn()" class="btn btn-default">Sign in</a>
     </div>
-    <!-- /.container -->
+  </div>
+
+
+  <div id="feedUI" style="display:none">
+    <!-- Page Content -->
+      <div class="container" style="height:100vh">
+          <div class="col-md-6 col-xs-12" style="height:100%;">
+              <div class="topblock"></div>
+              <div class="child">
+                  <h3> Welcome back, </h3>
+                  <h1 id="NAME"> John Doe </h1>
+                  <h3> It's nice to see you again. </h3>
+                  <br />
+                  <p> Since you last checked in, you've been visited by </p>
+                  <p> <strong> 15 </strong> Strangers </p>
+                  <p> <strong> 4 </strong> Friends </p>
+
+                  <br />
+                  <p style="font-size:9px"> SAFEGUARD </p>
+                  <a style="margin-right:10px;" href="index.html" class="btn btn-danger">Sign out</a>
+                  <a href="#" class="btn btn-default">Settings</a>
+
+              </div>
+
+          </div>
+
+          <div class="col-md-6 col-xs-12 feed">
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> STRANGER </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> STRANGER </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> STRANGER </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> STRANGER </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+
+              <!-- Individual Panel -->
+              <div class="panel panel-default">
+                <div class="panel-body">
+                  Visited by <strong> BOBBY JOHN </strong>
+                </div>
+                <div class="panel-footer" style="padding:10px">   <img class="icon-sm" src="img/clock.png"> 9:99 XM </div>
+              </div>
+              <!-- End Panel -->
+          </div>
+
+
+      </div>
+      <!-- /.container -->
+    </div>
+
+    <!-- Firebase Init -->
+    <script src="https://www.gstatic.com/firebasejs/3.7.6/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyAcRGeHvDfC4POaQVmpqsr_lXq4xn8iF8w",
+        authDomain: "safeguard-82cc4.firebaseapp.com",
+        databaseURL: "https://safeguard-82cc4.firebaseio.com",
+        projectId: "safeguard-82cc4",
+        storageBucket: "safeguard-82cc4.appspot.com",
+        messagingSenderId: "755833931403"
+      };
+      firebase.initializeApp(config);
+    </script>
+
+    <!-- login script -->
+    <script src="js/loginScript.js"></script>
 
     <!-- jQuery Version 1.11.1 -->
     <script src="js/jquery.js"></script>
