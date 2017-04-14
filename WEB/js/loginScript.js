@@ -1,5 +1,5 @@
 // DEBUG BOOLEAN
-var debug = true;
+var debug = false;
 
 function safeguard_createUser() {
     // Get a reference to the database service
@@ -70,7 +70,7 @@ function safeguard_signIn() {
   });
 }
 
-// TODO finish this
+// TODO actually populate data using data from stream
 function populateData(userId) {
   if (debug) alert('POPULATING DATA');
 }
