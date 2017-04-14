@@ -19,6 +19,23 @@ A home security app created collectively by High Schoolers in the Tinovation pro
   * Beginning of the year, Basic JS intro
   * Beginning of the year, Linking HTML and JS
   * Beginning of the year, Multi-screen Web Apps with JS
+  * Middle of the year, Intro to databases
+  * Middle of the year, JSON Trees and Firebase
+  * Middle of the year, Reading and Writing with Firebase
+* Authentication
+  * Middle of the year, Intro to databases
+  * Middle of the year, JSON Trees and Firebase
+  * Middle of the year, Reading and Writing with Firebase
+  * End of the year, Authenticating with Firebase's built-in authentication
+  * End of the year, Authenticating using a built-from-scratch user data trees
+  * End of the year, Facilitating cross-platform database Design
+* Data feed
+  * Middle of the year, JSON Trees and Firebase
+  * Middle of the year, Reading and Writing with Firebase
+  * Middle of the year, Data Structures and function-based programming in JavaScript
+  * End of the year, Advanced JavaScript and function-based programming
+  * End of the year, Listeners and Firebase-specific JavaScript techniques
+
 
 ### iOS
 
