@@ -16,7 +16,9 @@ A home security app created collectively by High Schoolers in the Tinovation pro
     * Beginning of the year, intro to APIs and CDNs
     * Beginning of the year, More Bootstrap + BootSwatch
 * Sign-in section
-  * Beginning of the year, intro to JavaScript
+  * Beginning of the year, Basic JS intro
+  * Beginning of the year, Linking HTML and JS
+  * Beginning of the year, Multi-screen Web Apps with JS
 
 ### iOS
 
