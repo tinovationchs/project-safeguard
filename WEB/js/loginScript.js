@@ -15,17 +15,16 @@ function safeguard_createUser() {
 
     // TODO check if user exists
     var topUserPostsRef = firebase.database().ref(username);
-    alert(topUserPostsRef);
+    if (debug) alert(topUserPostsRef);
 
     // attempts to read data at username, to check if data exists.
     return topUserPostsRef.once('value').then(function(snapshot) {
         if (snapshot.val() == null) {
-          // data doesn't exist! Create user!
-          if (debug) console.log("User " + username + " does not exist. Creating now...");
-          writeUserData(username, password);
-          if (debug) console.log("Successfully created!");
-        }
-        else {
+            // data doesn't exist! Create user!
+            if (debug) console.log("User " + username + " does not exist. Creating now...");
+            writeUserData(username, password);
+            if (debug) console.log("Successfully created!");
+        } else {
             // Data exists. Do not create user.
             var stream = snapshot.val().stream;
             console.log("User " + username + " already exists. User not created.");
@@ -40,39 +39,78 @@ function safeguard_createUser() {
 
 function safeguard_signIn() {
 
-  // Get data from document fields
-  var username = document.getElementById('user').value;
-  var password = document.getElementById('password').value;
+    // Get data from document fields
+    var username = document.getElementById('user').value;
+    var password = document.getElementById('password').value;
 
-  var userRef = firebase.database().ref(username);
-  alert(userRef);
+    var userRef = firebase.database().ref(username);
+    if (debug) alert(userRef);
 
-  // attempts to read data at username, to check if data exists.
-  return userRef.once('value').then(function(snapshot) {
-      if (snapshot.val() == null) {
-        // data doesn't exist! sign in failed.
-        if (debug) console.log("User " + username + " does not exist.");
-        alert("username doesn't exist! create an account first!");
-      }
-      else {
-          // Data exists. Sign in and populate
-          var onlinePassword = snapshot.val().password;
-          if (password == onlinePassword) {
-            if (debug) alert("Sign in success.");
-            if (debug) console.log("User " + username + " successfully authenticated with password " + password + " matching the online archived password of " + onlinePassword);
-            populateData(username);
-          } else {
-            alert("password incorrect! Try again!");
-          }
+    // attempts to read data at username, to check if data exists.
+    return userRef.once('value').then(function(snapshot) {
+        if (snapshot.val() == null) {
+            // data doesn't exist! sign in failed.
+            if (debug) console.log("User " + username + " does not exist.");
+            alert("username doesn't exist! create an account first!");
+        } else {
+            // Data exists. Sign in and populate
+            var onlinePassword = snapshot.val().password;
+            if (password == onlinePassword) {
+                if (debug) alert("Sign in success.");
+                if (debug) console.log("User " + username + " successfully authenticated with password " + password + " matching the online archived password of " + onlinePassword);
+                populateData(username);
+            } else {
+                alert("Password incorrect! Try again!");
+            }
 
 
-      }
-  });
+        }
+    });
 }
 
 // TODO actually populate data using data from stream
 function populateData(userId) {
-  if (debug) alert('POPULATING DATA');
+
+
+    var strangerCount=0;
+    var friendCount=0;
+
+    // SETUP PAGE
+    document.getElementById("signInUI").style.display = "none";
+    document.getElementById("feedUI").style.display = "block";
+
+    document.getElementById("NAME").innerHTML = userId;
+
+    var streamRef = firebase.database().ref(userId + '/stream');
+
+
+    streamRef.once('value', function(snapshot) {
+        snapshot.forEach(function(childSnapshot) {
+            var timestamp = childSnapshot.key;
+            var eventDesc = childSnapshot.child('event').val();
+
+            if (debug) alert(timestamp);
+            if (debug) alert(eventDesc);
+
+            if (eventDesc.includes('stranger')) {
+              strangerCount++;
+            } else if (eventDesc.includes('friend')) {
+              friendCount++;
+            }
+
+            var formatTimestamp;
+
+            formatTimestamp = ' ' + timestamp.substring(2,4) + ':' + timestamp.substring(4) + ' ' + timestamp.substring(0,2);
+
+            document.getElementById("strangerCount").innerHTML = strangerCount;
+            document.getElementById("friendCount").innerHTML = friendCount;
+
+            document.getElementById("feed").innerHTML += '<div class="panel panel-default"> <div class="panel-body"> ' + eventDesc + '</div> <div class="panel-footer" style="padding:10px"> <img class="icon-sm" src="img/clock.png">' + formatTimestamp + '</div> </div>'
+        });
+    });
+
+
+
 }
 
 function writeUserData(userId, pass) {

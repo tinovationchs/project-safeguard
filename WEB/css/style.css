@@ -8,6 +8,11 @@ body {
 	background-color: #ecf0f1;
 }
 
+.status {
+	height:100vh;
+}
+
+
 .icon-sm {
 	width:16px;
 	margin-top:-2px;
@@ -22,6 +27,14 @@ body {
 
     }
 
+		.status {
+			height:auto;
+			margin-bottom:40px;
+		}
+
+		.feed {
+			margin-top:50px;
+		}
 
     .child {
     	line-height: 16px;
