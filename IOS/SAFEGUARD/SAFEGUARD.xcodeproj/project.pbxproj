@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E6A701EC53275000FE811 /* UserInterface.swift */; };
 		9F8F336D1EC50E8100B4062D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F336C1EC50E8100B4062D /* AppDelegate.swift */; };
 		9F8F336F1EC50E8100B4062D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F336E1EC50E8100B4062D /* ViewController.swift */; };
 		9F8F33721EC50E8100B4062D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33701EC50E8100B4062D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9F4E6A701EC53275000FE811 /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
 		9F8F33691EC50E8100B4062D /* SAFEGUARD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAFEGUARD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8F336C1EC50E8100B4062D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F8F336E1EC50E8100B4062D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			children = (
 				9F8F336C1EC50E8100B4062D /* AppDelegate.swift */,
 				9F8F336E1EC50E8100B4062D /* ViewController.swift */,
+				9F4E6A701EC53275000FE811 /* UserInterface.swift */,
 				9F8F33701EC50E8100B4062D /* Main.storyboard */,
 				9F8F33731EC50E8100B4062D /* Assets.xcassets */,
 				9F8F33751EC50E8100B4062D /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F8F336F1EC50E8100B4062D /* ViewController.swift in Sources */,
+				9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */,
 				9F8F336D1EC50E8100B4062D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9Y96CV7VP;
 				INFOPLIST_FILE = SAFEGUARD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinovation.SAFEGUARD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9Y96CV7VP;
 				INFOPLIST_FILE = SAFEGUARD/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tinovation.SAFEGUARD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +310,7 @@
 				9F8F337D1EC50E8100B4062D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
