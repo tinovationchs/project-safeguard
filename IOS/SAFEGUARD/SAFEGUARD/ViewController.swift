@@ -22,8 +22,28 @@ class ViewController: UIViewController {
         usernameTextField.delegate = self
         passwordTextField.autocorrectionType = .no
         passwordTextField.delegate = self
+        
+        DataController.instance.signupUser(username: "sdfsdf", password: "test123")
     }
 
+    @IBAction func signupButtonTapped(_ sender: UIButton) {
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        if (username?.characters.count)! > K.minUsernameLength && (password?.characters.count)! > K.minPasswordLength {
+            DataController.instance.signupUser(username: username!, password: password!)
+        }
+    }
+    
+    @IBAction func loginButtonTapped(_ sender: UIButton) {
+        let username = usernameTextField.text
+        let password = passwordTextField.text
+        if (username?.characters.count)! > K.minUsernameLength && (password?.characters.count)! > K.minPasswordLength {
+            DataController.instance.loginUser(username: username!, password: password!)
+        }
+    }
+    
+    
+    
     // Allow users to tap outside to dismiss the keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super.touchesBegan(touches, with: event)

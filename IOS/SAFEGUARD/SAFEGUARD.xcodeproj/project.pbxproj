@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09B4D448AB0254000A02BBAF /* Pods_SAFEGUARD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */; };
+		9F3F3A151EC56A48008546A9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F3A141EC56A48008546A9 /* DataController.swift */; };
 		9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E6A701EC53275000FE811 /* UserInterface.swift */; };
 		9F8B45BA1EC539D3009BC5E7 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B45B21EC539D3009BC5E7 /* Nunito-Black.ttf */; };
 		9F8B45BB1EC539D3009BC5E7 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B45B31EC539D3009BC5E7 /* Nunito-Bold.ttf */; };
@@ -21,9 +23,13 @@
 		9F8F33721EC50E8100B4062D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33701EC50E8100B4062D /* Main.storyboard */; };
 		9F8F33741EC50E8100B4062D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33731EC50E8100B4062D /* Assets.xcassets */; };
 		9F8F33771EC50E8100B4062D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33751EC50E8100B4062D /* LaunchScreen.storyboard */; };
+		9FC269C61EC593230027F668 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC269C51EC593230027F668 /* Constants.swift */; };
+		9FF2FD941EC5651F00F03E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2FD931EC5651F00F03E81 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAFEGUARD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F3F3A141EC56A48008546A9 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9F4E6A701EC53275000FE811 /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
 		9F8B45B21EC539D3009BC5E7 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
 		9F8B45B31EC539D3009BC5E7 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
@@ -40,6 +46,10 @@
 		9F8F33731EC50E8100B4062D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8F33761EC50E8100B4062D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8F33781EC50E8100B4062D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FC269C51EC593230027F668 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FF2FD931EC5651F00F03E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A7114161C6AF15359AC84FE8 /* Pods-SAFEGUARD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAFEGUARD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD.debug.xcconfig"; sourceTree = "<group>"; };
+		C048C5875CBB7A6B59C82884 /* Pods-SAFEGUARD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAFEGUARD.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,12 +57,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B4D448AB0254000A02BBAF /* Pods_SAFEGUARD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		734A1DEADD431359F69FD468 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F8B45B11EC539D3009BC5E7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +92,8 @@
 			children = (
 				9F8F336B1EC50E8100B4062D /* SAFEGUARD */,
 				9F8F336A1EC50E8100B4062D /* Products */,
+				A403FAC2B93FF86D01E9E4D4 /* Pods */,
+				734A1DEADD431359F69FD468 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -89,14 +110,26 @@
 			children = (
 				9F8F336C1EC50E8100B4062D /* AppDelegate.swift */,
 				9F8F336E1EC50E8100B4062D /* ViewController.swift */,
+				9F3F3A141EC56A48008546A9 /* DataController.swift */,
 				9F4E6A701EC53275000FE811 /* UserInterface.swift */,
+				9FC269C51EC593230027F668 /* Constants.swift */,
 				9F8F33701EC50E8100B4062D /* Main.storyboard */,
 				9F8F33731EC50E8100B4062D /* Assets.xcassets */,
 				9F8F33751EC50E8100B4062D /* LaunchScreen.storyboard */,
 				9F8F33781EC50E8100B4062D /* Info.plist */,
+				9FF2FD931EC5651F00F03E81 /* GoogleService-Info.plist */,
 				9F8B45B11EC539D3009BC5E7 /* Fonts */,
 			);
 			path = SAFEGUARD;
+			sourceTree = "<group>";
+		};
+		A403FAC2B93FF86D01E9E4D4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7114161C6AF15359AC84FE8 /* Pods-SAFEGUARD.debug.xcconfig */,
+				C048C5875CBB7A6B59C82884 /* Pods-SAFEGUARD.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F8F337B1EC50E8100B4062D /* Build configuration list for PBXNativeTarget "SAFEGUARD" */;
 			buildPhases = (
+				46B6943B20E4613479E9DD8E /* [CP] Check Pods Manifest.lock */,
 				9F8F33651EC50E8100B4062D /* Sources */,
 				9F8F33661EC50E8100B4062D /* Frameworks */,
 				9F8F33671EC50E8100B4062D /* Resources */,
+				29ACC176795CAE3122A0B2DA /* [CP] Embed Pods Frameworks */,
+				C520F8847B682B91F01584F1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,6 +200,7 @@
 				9F8B45BD1EC539D3009BC5E7 /* Nunito-ExtraLight.ttf in Resources */,
 				9F8B45BB1EC539D3009BC5E7 /* Nunito-Bold.ttf in Resources */,
 				9F8F33741EC50E8100B4062D /* Assets.xcassets in Resources */,
+				9FF2FD941EC5651F00F03E81 /* GoogleService-Info.plist in Resources */,
 				9F8B45C11EC539D3009BC5E7 /* Nunito-SemiBold.ttf in Resources */,
 				9F8B45BC1EC539D3009BC5E7 /* Nunito-ExtraBold.ttf in Resources */,
 				9F8F33721EC50E8100B4062D /* Main.storyboard in Resources */,
@@ -175,12 +212,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29ACC176795CAE3122A0B2DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46B6943B20E4613479E9DD8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C520F8847B682B91F01584F1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9F8F33651EC50E8100B4062D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC269C61EC593230027F668 /* Constants.swift in Sources */,
 				9F8F336F1EC50E8100B4062D /* ViewController.swift in Sources */,
+				9F3F3A151EC56A48008546A9 /* DataController.swift in Sources */,
 				9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */,
 				9F8F336D1EC50E8100B4062D /* AppDelegate.swift in Sources */,
 			);
@@ -305,6 +392,7 @@
 		};
 		9F8F337C1EC50E8100B4062D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7114161C6AF15359AC84FE8 /* Pods-SAFEGUARD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9Y96CV7VP;
@@ -319,6 +407,7 @@
 		};
 		9F8F337D1EC50E8100B4062D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C048C5875CBB7A6B59C82884 /* Pods-SAFEGUARD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Y9Y96CV7VP;
