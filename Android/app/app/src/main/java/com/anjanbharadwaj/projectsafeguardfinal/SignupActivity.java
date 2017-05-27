@@ -46,6 +46,7 @@ public class SignupActivity extends AppCompatActivity {
                 root.child(user).updateChildren(lowermap);
 
                 Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                i.putExtra("Username", user);
                 startActivity(i);
             }
         });
