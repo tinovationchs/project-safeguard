@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09B4D448AB0254000A02BBAF /* Pods_SAFEGUARD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */; };
+		9F2F7F9C1EEA4BB80085C544 /* StreamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F7F9B1EEA4BB80085C544 /* StreamViewController.swift */; };
+		9F2F7FA11EEA54000085C544 /* StreamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F7FA01EEA54000085C544 /* StreamCell.swift */; };
 		9F3F3A151EC56A48008546A9 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3F3A141EC56A48008546A9 /* DataController.swift */; };
 		9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4E6A701EC53275000FE811 /* UserInterface.swift */; };
 		9F8B45BA1EC539D3009BC5E7 /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B45B21EC539D3009BC5E7 /* Nunito-Black.ttf */; };
@@ -19,16 +21,19 @@
 		9F8B45C01EC539D3009BC5E7 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B45B81EC539D3009BC5E7 /* Nunito-Regular.ttf */; };
 		9F8B45C11EC539D3009BC5E7 /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F8B45B91EC539D3009BC5E7 /* Nunito-SemiBold.ttf */; };
 		9F8F336D1EC50E8100B4062D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F336C1EC50E8100B4062D /* AppDelegate.swift */; };
-		9F8F336F1EC50E8100B4062D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F336E1EC50E8100B4062D /* ViewController.swift */; };
+		9F8F336F1EC50E8100B4062D /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8F336E1EC50E8100B4062D /* AccountViewController.swift */; };
 		9F8F33721EC50E8100B4062D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33701EC50E8100B4062D /* Main.storyboard */; };
 		9F8F33741EC50E8100B4062D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33731EC50E8100B4062D /* Assets.xcassets */; };
 		9F8F33771EC50E8100B4062D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F8F33751EC50E8100B4062D /* LaunchScreen.storyboard */; };
 		9FC269C61EC593230027F668 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC269C51EC593230027F668 /* Constants.swift */; };
+		9FC896CF1EEA77980037FCE9 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC896CE1EEA77980037FCE9 /* Event.swift */; };
 		9FF2FD941EC5651F00F03E81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FF2FD931EC5651F00F03E81 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAFEGUARD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F2F7F9B1EEA4BB80085C544 /* StreamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamViewController.swift; sourceTree = "<group>"; };
+		9F2F7FA01EEA54000085C544 /* StreamCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamCell.swift; sourceTree = "<group>"; };
 		9F3F3A141EC56A48008546A9 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		9F4E6A701EC53275000FE811 /* UserInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInterface.swift; sourceTree = "<group>"; };
 		9F8B45B21EC539D3009BC5E7 /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
@@ -41,12 +46,13 @@
 		9F8B45B91EC539D3009BC5E7 /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
 		9F8F33691EC50E8100B4062D /* SAFEGUARD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAFEGUARD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F8F336C1EC50E8100B4062D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9F8F336E1EC50E8100B4062D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9F8F336E1EC50E8100B4062D /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		9F8F33711EC50E8100B4062D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9F8F33731EC50E8100B4062D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F8F33761EC50E8100B4062D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F8F33781EC50E8100B4062D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC269C51EC593230027F668 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9FC896CE1EEA77980037FCE9 /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		9FF2FD931EC5651F00F03E81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A7114161C6AF15359AC84FE8 /* Pods-SAFEGUARD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAFEGUARD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD.debug.xcconfig"; sourceTree = "<group>"; };
 		C048C5875CBB7A6B59C82884 /* Pods-SAFEGUARD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAFEGUARD.release.xcconfig"; path = "Pods/Target Support Files/Pods-SAFEGUARD/Pods-SAFEGUARD.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +76,16 @@
 				1B31B83EA5FB9EE2FED1F905 /* Pods_SAFEGUARD.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F2F7F9D1EEA4BBE0085C544 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9F8F336E1EC50E8100B4062D /* AccountViewController.swift */,
+				9F2F7F9B1EEA4BB80085C544 /* StreamViewController.swift */,
+				9F2F7FA01EEA54000085C544 /* StreamCell.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 		9F8B45B11EC539D3009BC5E7 /* Fonts */ = {
@@ -109,8 +125,9 @@
 			isa = PBXGroup;
 			children = (
 				9F8F336C1EC50E8100B4062D /* AppDelegate.swift */,
-				9F8F336E1EC50E8100B4062D /* ViewController.swift */,
+				9F2F7F9D1EEA4BBE0085C544 /* View Controllers */,
 				9F3F3A141EC56A48008546A9 /* DataController.swift */,
+				9FC896CE1EEA77980037FCE9 /* Event.swift */,
 				9F4E6A701EC53275000FE811 /* UserInterface.swift */,
 				9FC269C51EC593230027F668 /* Constants.swift */,
 				9F8F33701EC50E8100B4062D /* Main.storyboard */,
@@ -265,8 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FC896CF1EEA77980037FCE9 /* Event.swift in Sources */,
 				9FC269C61EC593230027F668 /* Constants.swift in Sources */,
-				9F8F336F1EC50E8100B4062D /* ViewController.swift in Sources */,
+				9F2F7FA11EEA54000085C544 /* StreamCell.swift in Sources */,
+				9F8F336F1EC50E8100B4062D /* AccountViewController.swift in Sources */,
+				9F2F7F9C1EEA4BB80085C544 /* StreamViewController.swift in Sources */,
 				9F3F3A151EC56A48008546A9 /* DataController.swift in Sources */,
 				9F4E6A711EC53275000FE811 /* UserInterface.swift in Sources */,
 				9F8F336D1EC50E8100B4062D /* AppDelegate.swift in Sources */,
