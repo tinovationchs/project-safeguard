@@ -103,11 +103,10 @@ extension Date {
     static func dateToReadableString(dateString: String) -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd-hh-mm-a"
-        print(dateString)
         let date = dateFormatter.date(from: dateString)!
         
         let readableDateFormatter = DateFormatter()
-        readableDateFormatter.dateFormat = "MMMM d, hh:mm a"
+        readableDateFormatter.dateFormat = "MMMM d, h:mm a"
         return readableDateFormatter.string(from: date)
     }
     
