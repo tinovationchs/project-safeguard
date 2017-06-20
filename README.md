@@ -41,4 +41,34 @@ A home security app created collectively by High Schoolers in the Tinovation pro
 
 ### Android
 
+* Sign Up Page
+  * Beginning of the year: 
+    * username and password edittext integration
+    * Integrating buttons
+    * Linking UI programmatically in order to authenticate users into the app
+    * Getting to know Android’s API while creating the sign-up page
+  * Middle of the Year
+    * Material design integration
+* Database/Storage Setup 
+  * Middle of the year:
+    * Created Firebase Repo
+    * Integrating Firebase into Android via gradle and using google-services.json file to communicate with the database
+    * Learning rudimentary functions such as pushing and pulling data
+  * End of the year:
+    * Creating the safeguard firebase structure in the database
+    * Authentication of users via Firebase Authentication
+    * Firebase storage setup for pushing images
+* Input Stream:
+  * End of the year:
+    * Implement recyclerview to display people who visited + their picture
+    * Pull images from storage in parallel with their information (such as name and event)
+    * Populate each specific information in a card (which is being recycled through the recyclerview)
+  * UI Advances
+    * End of the year:
+      * Material Design using the new Android support library
+      * Implementation of recyclerview and cards as discussed above
+      * Use of tab hosts to switch between input stream page and other pages (pages made with fragments instead of traditional use of activities)
+
+
+
 ### Backend
