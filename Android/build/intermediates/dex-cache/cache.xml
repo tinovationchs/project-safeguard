@@ -3,21 +3,21 @@
 
     <item
         is-multidex="true"
-        jar="/Users/anjanbharadwaj/Downloads/TinovationSecurityApp-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jar="/Users/anjanbharadwaj/AndroidStudioProjects/AndroidProjectSafeGuard/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="c82741bc129dd5f99f11a4ab8666ae24262053b6">
-        <dex dex="/Users/anjanbharadwaj/Downloads/TinovationSecurityApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_c18c9bbf5ac91f6a3b88cdb9f4d51c600e36e9c6/classes.dex" />
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="/Users/anjanbharadwaj/AndroidStudioProjects/AndroidProjectSafeGuard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_a528859c41b5bdd36fd73d6a4dc8e1d30cb55fe7/classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/Users/anjanbharadwaj/Downloads/TinovationSecurityApp-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jar="/Users/anjanbharadwaj/AndroidStudioProjects/AndroidProjectSafeGuard/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.0"
-        sha1="072f816d40657044fe3adc066d8304c69e4de338">
-        <dex dex="/Users/anjanbharadwaj/Downloads/TinovationSecurityApp-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_981eb47ab7c42a4cc75a0f425f3eb5a51a398010/classes.dex" />
+        sha1="2401b1b835fe7116f877b7c2d97311b9312dc1d4">
+        <dex dex="/Users/anjanbharadwaj/AndroidStudioProjects/AndroidProjectSafeGuard/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_1223dd5bb8c0201f4ae4f61341f24ffae3c6e9a1/classes.dex" />
     </item>
 
 </items>

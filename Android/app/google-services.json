@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "755833931403",
+    "firebase_url": "https://safeguard-82cc4.firebaseio.com",
+    "project_id": "safeguard-82cc4",
+    "storage_bucket": "safeguard-82cc4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755833931403:android:735faa02b497ea9f",
+        "android_client_info": {
+          "package_name": "com.example.sreeharirammohan.safeguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755833931403-p3n27v8268c4luvek4qudaltjnvm10kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_GxNUsd4QNV5VJvxx_zq5_FqiqXStqQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:755833931403:android:e1586d4e483f3741",
+        "android_client_info": {
+          "package_name": "com.mokshithvoodarla.tinovationsecurityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "755833931403-p3n27v8268c4luvek4qudaltjnvm10kl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_GxNUsd4QNV5VJvxx_zq5_FqiqXStqQo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
