@@ -73,8 +73,17 @@ https://tinovation-project-safeguard-2017.github.io/
 
 
 
-### Backend
+### Backend + Hardware
 
-* Utilized OpenCV Facial Recognition script written in Python
+* Utilized the following technologies to complete the Backend + Hardware
+ * OpenCV
+ * Python
+ * PyreBase
+ * Raspbian (Raspberry Pi + Pi Camera)
+ * Google Sketchup (3d Printing)
 
 (Python Code is on Raspberry Pi Demo Unit, not included on GitHub repository)
+For demo Python code minus the Pyrebase implementation (examples of what was utilized on the Demo Unit), please refer to
+https://github.com/AkiPraveen/shiny-vision .
+
+
