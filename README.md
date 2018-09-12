@@ -1,6 +1,8 @@
 # PROJECT-SAFEGUARD
 A home security app created collectively by High Schoolers in the Tinovation programming club. Students come to meetings, follow a workshop presented to them, and over the course of 1-2 hours learn a specific concept and create a proof of aforementioned concept. These proofs of concept were then collected by club officers and manually aggregated into one cohesive, codebase. This codebase was then cleaned up and streamlined into a functional cross-platform application that is essentially created by every single member of the club.
 
+https://tinovation-project-safeguard-2017.github.io/
+
 2016 - 2017
 
 ## Code reference
@@ -72,3 +74,7 @@ A home security app created collectively by High Schoolers in the Tinovation pro
 
 
 ### Backend
+
+* Utilized OpenCV Facial Recognition script written in Python
+
+(Python Code is on Raspberry Pi Demo Unit, not included on GitHub repository)
